@@ -8,4 +8,6 @@ g++ -std=c++11 ./src/UiHandle.cpp ./src/AppDataService.cpp -o ./bin/LPM -lcrypto
 ```
 
 manual.txt for more details
+
 Windows only
+
