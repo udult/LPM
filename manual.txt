@@ -1,0 +1,21 @@
+LOCAL PASSWORD MANAGER very early version
+
+Brief: Simple password manager that stores your passwords encrypted
+in text file.
+
+Encryption: AES-256 Algo CBC mode. Provided with - Crypto++ 8.9.0
+Requires Crypto++ 8.9.0 and C++11 for build.
+
+Usage: after build create /vault directory in project folder. Then create data.txt 
+and keys.txt in it. Now you can run your program. When you finish take keys.txt file 
+away from /vault. The main idea is to store keys.txt somewhere in safe place not next
+to data.txt file.
+
+You can edit or delete your files manually but remember - single data.txt
+file associated with single keys.txt file. They need each other in line-by-line
+format to work correctly. In case that you edit your files manually no garantee
+for correct work.
+
+You can also delete some of your saved passwords in runtime session.
+In that case key of chosen password sets to 00000... and you can
+never decrypt it again.
